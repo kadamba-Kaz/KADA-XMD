@@ -1,0 +1,40 @@
+{
+  "name": "Hans",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "description": "A multi-functional WhatsApp bot Pairing Web and QR Scanner.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+    },
+  "scripts": {
+    "run": "pm2 start index.js --deep-monitoring --attach --name Hans",
+    "Hans": "pm2 start index.js --deep-monitoring --attach --name Hans",
+    "start": "pm2 start index.js --deep-monitoring --attach --name Hans",
+    "stop": "pm2 stop Hans",
+    "restart": "pm2 restart Hans",
+    "reload": "pm2 reload Hans",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "baileysQr", "MdLogin", "MEGA-AI", "whatsapp-bot", "BotWhatsapp", "whatsapp-web", "whatsapp", "session", "pair-code", "express-pairing", "whatsappbot", "express-session", "whatsapp-api", "pairing", "baileys-md", "baileys-bot",
+    "whatsappLogin", "adiwajshing/baileys", "baileys-md-qr", "multi-device-qr", "whiskey sockets/baileys", "md-pair", "bot-pair", "baileysQrScanner", "botpairing", "WhatsAppPairing", "LinkDevice"
+  ],
+  "author": "HANS_TECH",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "github:cheekydavy/mbuvi-baileys",
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.3.0",
+    "node-fetch": "^2.6.1",
+    "pastebin-api": "^7.0.0",
+    "pino": "^8.1.0",
+    "phone": "3.1.30",
+    "body-parser": "^1.20.1",
+    "path": "^0.12.7",
+    "express": "^4.18.1",
+    "pm2": "^5.4.2",
+    "qrcode": "^1.5.3"
+  }
+}
